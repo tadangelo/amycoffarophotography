@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
 
 
-  root 'welcome#show'
+  root 'pages#home'
 end
