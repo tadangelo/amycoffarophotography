@@ -3,12 +3,10 @@
 body {
   background-color: GhostWhite;
   margin: 0;
-  padding: 0;
   width: 100%;
 }
 
 #nav {
-  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,8 +51,6 @@ h3 {
 
 #header {
   background-color: GhostWhite;
-  border: LightGray;
-  border-style: groove;
   opacity: .7;
   width: 100%;
   height:  100px;
@@ -98,12 +94,11 @@ h3 {
 
 #slide1 {
   width: 100%;
-  background: url('boyschoolsmiling.jpg') 50% 0 no-repeat fixed;
-  background-size: cover;
   color: #fff;
   height: 600px;
-  margin: 0;
   padding: 100px 0;
+  margin-left: -13%;
+  margin-right: -15%;
 }
 
 #slide2 {
@@ -111,11 +106,9 @@ h3 {
   background-color: GhostWhite;
   color: #333333;
   height: 400px;
-  margin: 0;
-  overflow: hidden;
   font-size: 10px;
-  border-style: groove;
-  
+  padding-top: 230px;
+  margin-bottom: 150px;
 }
 
 #slide3 {
@@ -136,7 +129,6 @@ h3 {
   margin: 0;
   overflow: hidden;
   font-size: 10px;
-  border-style: groove;
 }
 
 #slide5 {
@@ -150,7 +142,7 @@ h3 {
 }
 
 #slideReview {
-  padding: 50px 0 150px 0;
+  padding: 50px 0 25px 0;
   overflow: visible;
   height: inherit;
   display: flex;
@@ -159,13 +151,10 @@ h3 {
   align-items: center;
   background-color: GhostWhite;
   text-align: center;
-  border-style: groove;
 }
 
 #footer {
   background-color: GhostWhite;
-  border: LightGray;
-  border-style: groove;
   opacity: .7;
   width: 100%;
   height:  75px;
@@ -174,4 +163,20 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.card-columns {
+  padding: 5% 0 8% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.photo-columns {
+  margin: -25px 0 -20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
