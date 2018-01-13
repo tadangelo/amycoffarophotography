@@ -8,7 +8,12 @@ body {
 #nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+#nav a {
+  text-decoration: none;
+  color: Black;
 }
 
 h1 {
@@ -43,10 +48,11 @@ h3 {
 }
 
 #header {
-  background-color: WhiteSmoke;
+  background-color: #d8f0f3;
   opacity: .7;
   width: 100%;
   height:  75px;
+  margin: 0 0 -100px 0;
 }
 
 #logo {
@@ -86,7 +92,7 @@ h3 {
 
 #slide1 {
   width: 100%;
-  background: url('about.jpg') 50% 0 no-repeat fixed;
+  background: url('boyschoolsmiling.jpg') 50% 0 no-repeat fixed;
   background-size: cover;
   color: #fff;
   height: 600px;
@@ -96,7 +102,7 @@ h3 {
 
 #slide2, #slidePricing {
   width: 100%;
-  background-color: WhiteSmoke;
+  background-color: #d8f0f3;
   color: #333333;
   height: 300px;
   margin: 0;
@@ -105,7 +111,7 @@ h3 {
 
 #slide3 {
   width: 100%;
-  background: url('coloradopictures.jpg') 0 no-repeat fixed;
+  background: url('teengirl.jpg') 0 no-repeat fixed;
   background-size: cover;
   color: WhiteSmoke;
   height: 600px;
@@ -115,7 +121,7 @@ h3 {
 
 #slide4, #slidePricing {
   width: 100%;
-  background-color: WhiteSmoke;
+  background-color: #d8f0f3;
   color: #333333;
   height: 300px;
   margin: 0;
@@ -124,7 +130,7 @@ h3 {
 
 #slide5 {
   width: 100%;
-  background: url('couch.jpeg') 0 no-repeat fixed;
+  background: url('coupl3.jpg') 0 no-repeat fixed;
   background-size: cover;
   color: WhiteSmoke;
   height: 600px;
@@ -133,10 +139,11 @@ h3 {
 }
 
 #footer {
-  background-color: WhiteSmoke;
+  background-color: #d8f0f3;
   opacity: .7;
   width: 100%;
   height:  75px;
+  margin: -100px 0 0 0;
 }
 
 
