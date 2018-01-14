@@ -114,6 +114,9 @@ h3 {
 #slide3 {
   width: 100%;
   background: url('teengirl.jpg') 0 no-repeat fixed;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
   background-size: cover;
   color: White;
   height: 600px;
@@ -134,6 +137,9 @@ h3 {
 #slide5 {
   width: 100%;
   background: url('coupl3.jpg') 0 no-repeat fixed;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
   background-size: cover;
   color: White;
   height: 600px;
