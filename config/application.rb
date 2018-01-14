@@ -15,5 +15,19 @@ module CoffaroPhoto2
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   	config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
+  	config.action_mailer.smtp_settings = {
+	  address: "amy_coffaro04@yahoo.com",
+	  port: 587,
+	  domain: "<amycoffarophotography.herokuapp.com/>",
+	  user_name: "<username>",
+	  password: "<password>",
+	  authentication: :plain,
+	  enable_starttls_auto: true
+	}
+
+	config.action_mailer.default_url_options = {
+	  host: "amycoffarophotography.herokuapp.com/"
+	}
   end
 end

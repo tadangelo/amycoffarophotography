@@ -9,8 +9,9 @@ Rails.application.routes.draw do
 
   get 'proofs', to: 'pages#proofs'
 
-  get 'contact', to: 'pages#contact'
+  get 'contact', to: 'messages#new', as: 'contact'
 
+  post 'contact', to: 'messages#create'
 
 
   root to: 'pages#home'

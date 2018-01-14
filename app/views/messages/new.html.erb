@@ -1,0 +1,67 @@
+<%= render 'shared/nav' %>
+<br>
+<br>
+<br>
+<br>
+<%= render 'shared/top_photo' %>
+
+<br>
+
+<div class="contact">
+  <div class="blurb">If you are interested in more information please feel free to contact me.  Thanks!</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <h4 class="contact">Contact Info</h4>
+       <div class="form-group">
+        <div class: 'form-control'>Location:</div>
+      </div>
+      <div class="form-group">
+        <div class: 'form-control'>Houston/Spring/The Woodlands, Texas</div>
+      </div>
+      
+      <div class="form-group">
+        <div class: 'form-control'>Phone:</div>
+      </div>
+
+      <div class="form-group">
+        <div class: 'form-control'><%= number_to_phone "281-923-9703" %></div>
+      </div>
+    
+      <div class="form-group">
+        <%= link_to "Email me", "mailto:amy_coffaro04@yahoo.com?subject=Website Contact", class: 'btn btn-secondary' %>
+      </div>
+    </div>
+    
+
+    <div class="col-md-6">
+
+    <h4 class="contact">Contact Form</h4>
+      <%= form_for @message, url: contact_path do |message_form| %>
+        <fieldset>
+          <div class="form-group">
+            <%= message_form.text_field :name, class: 'form-control', placeholder: "Name" %>
+          </div>
+          
+          <div class="form-group">
+            <%= message_form.email_field :email, class: 'form-control', placeholder: "Email"%>
+          </div>
+          
+          <div class="form-group">
+            <%= message_form.text_area :content, class: 'form-control', placeholder: "Message"%>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <div class="form-group">
+            <%= message_form.submit "Send", class: 'btn btn-secondary' %>
+          </div>
+        </fieldset>
+      <% end %>
+      <br>
+    </div>
+  </div>
+</div>
