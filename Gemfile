@@ -57,6 +57,7 @@ gem 'dangelo_view_tool', '~> 0.1.0'
 gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'devise', '~> 4.4'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 
 
