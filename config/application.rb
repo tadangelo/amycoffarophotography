@@ -19,15 +19,11 @@ module CoffaroPhoto2
   	config.action_mailer.smtp_settings = {
 	  address: "amy_coffaro04@yahoo.com",
 	  port: 587,
-	  domain: "http://amycoffarophotography.herokuapp.com/contact",
+	  domain: "https://amycoffarophotography.herokuapp.com/",
 	  user_name: "<username>",
 	  password: "<password>",
 	  authentication: :plain,
 	  enable_starttls_auto: true
-	}
-
-	config.action_mailer.default_url_options = {
-	  host: "http://amycoffarophotography.herokuapp.com/contact"
 	}
   end
 end
