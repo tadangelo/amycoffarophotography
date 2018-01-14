@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
 
   def redirect_to_full_site
     redirect_to request.protocol + request.host_with_port.gsub(/^m\./, '') +
-                request.request_uri and return
+                request.request_url and return
   end
 
   def redirect_to_mobile_if_applicable
