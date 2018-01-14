@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, :except => [:home, :about, :packages, :gallery, :contact]
+
   def home
   end
 
@@ -8,7 +10,7 @@ class PagesController < ApplicationController
   def packages
   end
 
-  def album
+  def gallery
   end
 
   def proofs

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
+  
 	get 'about', to: 'pages#about'
 
   get 'packages', to: 'pages#packages'
@@ -11,5 +13,5 @@ Rails.application.routes.draw do
 
 
 
-  root 'pages#home'
+  root to: 'pages#home'
 end
