@@ -9,5 +9,6 @@
 <br>
 
 <h1>Currently Under Construction</h1>
-
-<%= link_to "Logout", destroy_user_session_path, method: :delete if current_user? %>
+<br>
+<br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete if signed_in? %>
