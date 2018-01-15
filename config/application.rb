@@ -16,14 +16,14 @@ module CoffaroPhoto2
     # -- all .rb files in that directory are automatically loaded.
   	config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
-  	config.action_mailer.smtp_settings = {
-	  address: "amy_coffaro04@yahoo.com",
-	  port: 587,
-	  domain: "https://amycoffarophotography.herokuapp.com/",
-	  user_name: "<username>",
-	  password: "<password>",
-	  authentication: :plain,
-	  enable_starttls_auto: true
-	}
+ ActionMailer::Base.smtp_settings = {
+  :port           => ENV['MAILGUN_SMTP_PORT'],
+  :address        => ENV['MAILGUN_SMTP_SERVER'],
+  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  :domain         => 'https://amycoffarophotography.herokuapp.com/',
+  :authentication => :plain,
+}
+ActionMailer::Base.delivery_method = :smtp
   end
 end
